@@ -1,0 +1,144 @@
+.modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.left-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #06573a;
+}
+
+.title {
+    font-size: 65px;
+    text-align: center;
+}
+
+.description {
+    font-size: 35px;
+    padding: 20px;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.right-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f3ee;
+}
+
+.img_logo {
+    padding: 0;
+    height: 200px;
+    width: 400px;
+}
+
+.img_textLogo {
+    height: 100px;
+    width: 400px;
+}
+
+.form_title {
+    color: hsl(0, 0%, 20%);
+    font-size: 40px;
+    margin-bottom: 5dvh;
+}
+
+.registration_forms {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration_forms input::placeholder {
+    color: #06573a;
+    opacity: 1;
+}
+
+.registration_forms input,
+label {
+    color: #333333;
+    text-align: left;
+    border-radius: 15px;
+    border: solid #06573a;
+    width: 25dvw;
+    padding: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.button-forms {
+    background-color: #06573a;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bolder;
+
+}
+
+.button-forms:active {
+    transform: scale(0.95);
+}
+
+.button-forms:hover {
+    transition: 500ms;
+    background-color: #1b996d;
+
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #06573a;
+    text-decoration: underline;
+}
+
+.login-link:hover {
+    color: #1b996d;
+    transition: 500ms;
+}
+
+.login-text {
+    color: #06573a;
+    font-weight: bolder;
+}
+
+.error-message{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .left-side {
+        display: none;
+    }
+
+    .registration_forms input {
+        width: 35dvw;
+    }
+}
+
+@media (max-height: 700px) {
+    .img_logo {
+        display: none;
+    }
+}
