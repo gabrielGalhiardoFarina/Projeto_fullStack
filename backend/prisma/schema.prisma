@@ -1,3 +1,11 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
 model User {
   id        Int      @id @default(autoincrement())
   email     String   @unique
@@ -6,5 +14,5 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@map("users") // Isso define o nome da tabela no MySQL
+  @@map("users")
 }
